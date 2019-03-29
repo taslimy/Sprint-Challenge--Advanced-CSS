@@ -1,0 +1,30 @@
+.mainNavigation {
+  padding-bottom: 30px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.mainNavigation .navContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.mainNavigation .navContainer .logo {
+  font-size: 5rem;
+  margin-top: 15px;
+}
+.mainNavigation .navContainer .nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  width: 40%;
+}
+.mainNavigation .navContainer .nav .navItem {
+  text-decoration: none;
+}
+.mainNavigation .navContainer .nav .navItem:hover {
+  font-weight: bold;
+  transition: 0.1s ease-out;
+}

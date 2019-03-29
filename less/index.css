@@ -1,8 +1,3 @@
-.flexCentered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -180,39 +175,25 @@ p {
   align-items: center;
 }
 .mainNavigation .navContainer .logo {
-  font-size: 4rem;
+  font-size: 5rem;
   margin: 15px 0px 15px 0px;
-  animation: fade-in 0.2s linear infinite alternate;
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .mainNavigation .navContainer .nav {
   display: flex;
   justify-content: space-around;
   font-size: 1.6rem;
-  width: 50%;
-}
-@media (max-width: 500px) {
-  .mainNavigation .navContainer .nav {
-    width: 80%;
-  }
+  width: 60%;
 }
 .mainNavigation .navContainer .nav .navItem {
   color: #454a59;
   text-decoration: none;
 }
 .mainNavigation .navContainer .nav .navItem:hover {
-  font-weight: bolder;
-  transition: all 0.25s ease;
+  font-weight: bold;
+  transition: 0.1s ease-out;
 }
 footer {
-  color: #22283b;
+  color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -227,10 +208,6 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
-.home .mainHeader {
-  width: 100%;
-  border-radius: 5px;
-}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -241,21 +218,6 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
-}
-@media (max-width: 500px) {
-  .home .space-images img {
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  .home .space-images .sky {
-    display: none;
-  }
-}
-@media (max-width: 500px) {
-  .home .space-images .launch {
-    display: none;
-  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -273,20 +235,8 @@ footer {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 500px) {
-  .home .walk {
-    flex-direction: column-reverse;
-    padding: 15px;
-    margin-top: 0;
-  }
-}
 .home .walk .walk-text {
   width: 50%;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text {
-    width: 100%;
-  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -294,44 +244,9 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
-  background: #22283a;
-  color: #f6f6f6;
-  font-size: 2rem;
-  padding: 8px;
-  width: 30%;
-  text-align: center;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.home .walk .walk-text .btn:hover {
-  color: #22283a;
-  background: #f6f6f6;
-  border: 1px solid #dee2e6;
-  cursor: pointer;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text .btn {
-    border-radius: 3px;
-    width: 100%;
-    padding: 20px 0px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-img {
-    width: 100%;
-    margin-left: 0%;
-    margin-bottom: 10px;
-  }
 }
 .home .walk .walk-img img {
   width: 100%;

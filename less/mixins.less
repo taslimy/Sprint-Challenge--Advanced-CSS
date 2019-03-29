@@ -1,1 +1,39 @@
 // Mixins Here
+
+// Class Demo Example;
+
+.flexCentered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button(@background: @btn-bg-color, @color:@wild-sand, @font-size: 2rem) {
+  background: @background;
+  color: @color;
+  font-size: @font-size;
+  padding: 8px;
+  width: 30%;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  .flexCentered();
+}
+
+// Animation for Logo
+
+.keyframes(@name; @arguments) {
+  @keyframes @name {
+    @arguments();
+  }
+}
+
+.animation(@arguments) {
+  animation: @arguments;
+}
+
+// Media Query Escape
+
+// Mobile
+// @mobile: ~"(max-width: 700px)";
+@phone: ~"(max-width: 500px)";
